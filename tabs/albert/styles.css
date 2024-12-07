@@ -1,0 +1,203 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #111;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+    background: #ff4500;
+    color: #fff;
+    border-radius: 5px;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Sobre */
+#sobre {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#sobre h2 {
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 1rem;
+}
+
+#sobre p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Galeria */
+#galeria {
+    margin-bottom: 2rem;
+}
+
+#galeria h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 1.5rem;
+}
+
+#galeria article {
+    background: #fff;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#galeria article img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#galeria article h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #111;
+    margin: 1rem 0;
+}
+
+#galeria article p {
+    text-align: center;
+    color: #555;
+}
+
+/* Formulário de Contato */
+#contato {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#contato h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #111;
+}
+
+#form-contato {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#form-contato label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#form-contato input,
+#form-contato textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#form-contato button {
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#form-contato button:hover {
+    background: #ff4500;
+}
+
+/* Tributo */
+#tributo {
+    text-align: center;
+    padding: 2rem;
+    background: #111;
+    color: #fff;
+}
+
+#tributo img {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+#tributo p {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #galeria article {
+        padding: 0.5rem;
+    }
+}
